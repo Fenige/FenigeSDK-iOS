@@ -1,6 +1,6 @@
 # FenigeSDK
 
-[![CI Status](https://img.shields.io/travis/Dmytro Onyshchuk/FenigeSDK.svg?style=flat)](https://travis-ci.org/Fenige/FenigeSDK)
+[![CI Status](https://img.shields.io/travis/Fenige/FenigeSDK.svg?style=flat)](https://travis-ci.org/Fenige/FenigeSDK)
 [![Version](https://img.shields.io/cocoapods/v/FenigeSDK.svg?style=flat)](https://cocoapods.org/pods/FenigeSDK)
 [![License](https://img.shields.io/cocoapods/l/FenigeSDK.svg?style=flat)](https://cocoapods.org/pods/FenigeSDK)
 [![Platform](https://img.shields.io/cocoapods/p/FenigeSDK.svg?style=flat)](https://cocoapods.org/pods/FenigeSDK)
@@ -9,7 +9,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## System Requirements
+iOS 12.0 or above
 
 ## Installation
 
