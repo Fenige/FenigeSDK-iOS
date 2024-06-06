@@ -1,7 +1,8 @@
 # FenigeSDK
 
-[[![Version](https://img.shields.io/cocoapods/v/FenigeSDK.svg?style=flat)](https://cocoapods.org/pods/FenigeSDK)
-[![License](https://img.shields.io/cocoapods/l/FenigeSDK.svg?style=flat)](https://cocoapods.org/pods/FenigeSDK)
+[![Version](https://img.shields.io/cocoapods/v/FenigeSDK.svg?style=flat)](https://cocoapods.org/pods/FenigeSDK)
+![Swift 5.0+](https://img.shields.io/badge/Swift-5.0%2B-orange.svg)
+![iOS 12.0+](https://img.shields.io/badge/iOS-12.0%2B-blue.svg)
 [![Platform](https://img.shields.io/cocoapods/p/FenigeSDK.svg?style=flat)](https://cocoapods.org/pods/FenigeSDK)
 
 ## System Requirements
