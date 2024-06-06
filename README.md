@@ -27,27 +27,27 @@ import FenigeSDK
 You can init payment and will have callback with `Transaction ID`
 ```swift
 let redirectUrl = RedirectUrl(successUrl: "https://paytool-dev.fenige.pl/demo/?success=1",
-							  failureUrl: "https://paytool-dev.fenige.pl/demo/?success=0")
+                              failureUrl: "https://paytool-dev.fenige.pl/demo/?success=0")
 
 let address = Address(countryCode: "PL",
-					  city: "Testowo",
-					  postalCode: "12-345",
-					  street: "Testowa",
-					  houseNumber: "1")
+                      city: "Testowo",
+                      postalCode: "12-345",
+                      street: "Testowa",
+                      houseNumber: "1")
 
 let sender = Sender(firstName: "Test",
-					lastName: "Testowy",
-					address: address)
+                    lastName: "Testowy",
+                    address: address)
 
 let payment = Payment(transactionId: "39c92ae5-90bc-4a9f-9a29-661d958ffa41",
-					  currencyCode: "USD",
-					  amount: 10,
-					  description: "Test transaction",
-					  formLanguage: "en",
-					  redirectUrl: redirectUrl,
-					  sender: sender,
-					  merchantUrl: "https://paytool-dev.fenige.pl/demo/",
-					  orderNumber: "1")
+                      currencyCode: "USD",
+                      amount: 10,
+                      description: "Test transaction",
+                      formLanguage: "en",
+                      redirectUrl: redirectUrl,
+                      sender: sender,
+                      merchantUrl: "https://paytool-dev.fenige.pl/demo/",
+                      orderNumber: "1")
 
 fenigeSDKInstance.initPayment(apiKey: "0000-0000-0000-0000-0000", payment: payment, containerViewController: self, completion: { [weak self] (transactionId: String?) in
 	let transactionIdText = transactionId ?? "NIL"
