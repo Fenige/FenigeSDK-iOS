@@ -25,6 +25,8 @@ import FenigeSDK
 
 You can init payment and will have callback with `Transaction ID`:
 ```swift
+let fenigeSDKInstance = Fenige()
+
 let redirectUrl = RedirectUrl(successUrl: "https://paytool-dev.fenige.pl/demo/?success=1",
                               failureUrl: "https://paytool-dev.fenige.pl/demo/?success=0")
 
