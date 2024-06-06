@@ -1,7 +1,6 @@
 # FenigeSDK
 
-[![CI Status](https://img.shields.io/travis/Fenige/FenigeSDK.svg?style=flat)](https://travis-ci.org/Fenige/FenigeSDK)
-[![Version](https://img.shields.io/cocoapods/v/FenigeSDK.svg?style=flat)](https://cocoapods.org/pods/FenigeSDK)
+[[![Version](https://img.shields.io/cocoapods/v/FenigeSDK.svg?style=flat)](https://cocoapods.org/pods/FenigeSDK)
 [![License](https://img.shields.io/cocoapods/l/FenigeSDK.svg?style=flat)](https://cocoapods.org/pods/FenigeSDK)
 [![Platform](https://img.shields.io/cocoapods/p/FenigeSDK.svg?style=flat)](https://cocoapods.org/pods/FenigeSDK)
 
@@ -52,7 +51,6 @@ let payment = Payment(transactionId: "39c92ae5-90bc-4a9f-9a29-661d958ffa41",
 fenigeSDKInstance.initPayment(apiKey: "0000-0000-0000-0000-0000", payment: payment, containerViewController: self, completion: { [weak self] (transactionId: String?) in
     let transactionIdText = transactionId ?? "NIL"
     print("Transaction ID: " + transactionIdText)
-    self?.displayTransactionId(transactionIdText)
 })
 ```
 

@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E500A293F0E92B95BDCF987288C25816 /* FenigeSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9DCAA27FB1AECD2FEF6AF36F0C38BA81 /* Build configuration list for PBXAggregateTarget "FenigeSDK" */;
+			buildPhases = (
+				73BC52436B3984A7E1E5F13B3FE712B6 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = FenigeSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		2CE914C8F8A6092EE739CE5F23E25F91 /* Pods-FenigeSDKExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABE3AFF0D70D23D1A7F0C416E36385C /* Pods-FenigeSDKExample-dummy.m */; };
+		8B62514CF54DEE9E1F96634B789CBCDC /* Pods-FenigeSDKExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 991943EA743AB665B570FC5DA2732A5F /* Pods-FenigeSDKExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3C31E9B44BDFA60CD90FBBD142D51CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FDE04945F006CD438712F77F40035F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E500A293F0E92B95BDCF987288C25816;
+			remoteInfo = FenigeSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0325D6C4B93F86A4D10D638F9CEFBE60 /* Pods-FenigeSDKExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FenigeSDKExample.modulemap"; sourceTree = "<group>"; };
+		0FB1D270B58F94E09F40B2812EB11BAE /* FenigeSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = FenigeSDK.xcframework; sourceTree = "<group>"; };
+		11E3D095142ED11A3B0AFA4BDAC56328 /* FenigeSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FenigeSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		1ABE3AFF0D70D23D1A7F0C416E36385C /* Pods-FenigeSDKExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FenigeSDKExample-dummy.m"; sourceTree = "<group>"; };
+		1F228C01D04E9DA72FD3077B01A6D179 /* Pods-FenigeSDKExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FenigeSDKExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		20E030592747DBDF54A718531819BAC2 /* Pods-FenigeSDKExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FenigeSDKExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		286A499C7142088CF91262CE1AEB634C /* Pods-FenigeSDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FenigeSDKExample.debug.xcconfig"; sourceTree = "<group>"; };
+		6A1998034C7BEF732DE504F18066E533 /* Pods-FenigeSDKExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FenigeSDKExample.release.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		991943EA743AB665B570FC5DA2732A5F /* Pods-FenigeSDKExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FenigeSDKExample-umbrella.h"; sourceTree = "<group>"; };
+		9C3912690D14E3560F87C15F52245CAF /* Pods-FenigeSDKExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FenigeSDKExample-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D81C3439EA134A2348BA94EB3AEDDD37 /* Pods-FenigeSDKExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FenigeSDKExample-Info.plist"; sourceTree = "<group>"; };
+		E00358AE59E4A9F89D6D11665B19331F /* Pods-FenigeSDKExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FenigeSDKExample"; path = Pods_FenigeSDKExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1449D5E7A89BC8CFEEE29BBB0011DEE /* FenigeSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FenigeSDK.debug.xcconfig; sourceTree = "<group>"; };
+		E1B7FD3DBB3F641BD1FBA2F14B9AF216 /* FenigeSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FenigeSDK.release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48156B9FD3F8DD6EC700A8F85A36DAA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C31E9B44BDFA60CD90FBBD142D51CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		330E9E70B747CB9DDDE74C2E60F9E2D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FB1D270B58F94E09F40B2812EB11BAE /* FenigeSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6A97985D775EB014B9AB6809082D1471 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB53BBE47E5E014318F0CC87DB001BE3 /* FenigeSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77849956D4268F2D171E77EBF8C97305 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				11E3D095142ED11A3B0AFA4BDAC56328 /* FenigeSDK-xcframeworks.sh */,
+				E1449D5E7A89BC8CFEEE29BBB0011DEE /* FenigeSDK.debug.xcconfig */,
+				E1B7FD3DBB3F641BD1FBA2F14B9AF216 /* FenigeSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FenigeSDK";
+			sourceTree = "<group>";
+		};
+		89D7D5B255003DA6FC2865BBD29C736C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E00358AE59E4A9F89D6D11665B19331F /* Pods-FenigeSDKExample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F5A733F3D4159BBB2E20EDDB09B4F2A /* Pods-FenigeSDKExample */ = {
+			isa = PBXGroup;
+			children = (
+				0325D6C4B93F86A4D10D638F9CEFBE60 /* Pods-FenigeSDKExample.modulemap */,
+				1F228C01D04E9DA72FD3077B01A6D179 /* Pods-FenigeSDKExample-acknowledgements.markdown */,
+				20E030592747DBDF54A718531819BAC2 /* Pods-FenigeSDKExample-acknowledgements.plist */,
+				1ABE3AFF0D70D23D1A7F0C416E36385C /* Pods-FenigeSDKExample-dummy.m */,
+				9C3912690D14E3560F87C15F52245CAF /* Pods-FenigeSDKExample-frameworks.sh */,
+				D81C3439EA134A2348BA94EB3AEDDD37 /* Pods-FenigeSDKExample-Info.plist */,
+				991943EA743AB665B570FC5DA2732A5F /* Pods-FenigeSDKExample-umbrella.h */,
+				286A499C7142088CF91262CE1AEB634C /* Pods-FenigeSDKExample.debug.xcconfig */,
+				6A1998034C7BEF732DE504F18066E533 /* Pods-FenigeSDKExample.release.xcconfig */,
+			);
+			name = "Pods-FenigeSDKExample";
+			path = "Target Support Files/Pods-FenigeSDKExample";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6A97985D775EB014B9AB6809082D1471 /* Pods */,
+				89D7D5B255003DA6FC2865BBD29C736C /* Products */,
+				D4D1D6C6221DE47E00C1761CC6D04DB0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4D1D6C6221DE47E00C1761CC6D04DB0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F5A733F3D4159BBB2E20EDDB09B4F2A /* Pods-FenigeSDKExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FB53BBE47E5E014318F0CC87DB001BE3 /* FenigeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				330E9E70B747CB9DDDE74C2E60F9E2D4 /* Frameworks */,
+				77849956D4268F2D171E77EBF8C97305 /* Support Files */,
+			);
+			name = FenigeSDK;
+			path = FenigeSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		850580DE87CEA948ADE1DADD3CC906BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B62514CF54DEE9E1F96634B789CBCDC /* Pods-FenigeSDKExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B67036E2BD005A0DC75DCBC4A1C1E37C /* Pods-FenigeSDKExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A46CD4202FA4696C72C89D41D6905E /* Build configuration list for PBXNativeTarget "Pods-FenigeSDKExample" */;
+			buildPhases = (
+				850580DE87CEA948ADE1DADD3CC906BA /* Headers */,
+				EF24E217FB4AC1D431A6D9DC5DE60020 /* Sources */,
+				48156B9FD3F8DD6EC700A8F85A36DAA2 /* Frameworks */,
+				A51E05E6CF2BCBCEB8BF75E6D819C604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C8D6E197A1D0EFBA97B4AEBF26C3E63 /* PBXTargetDependency */,
+			);
+			name = "Pods-FenigeSDKExample";
+			productName = Pods_FenigeSDKExample;
+			productReference = E00358AE59E4A9F89D6D11665B19331F /* Pods-FenigeSDKExample */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 89D7D5B255003DA6FC2865BBD29C736C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E500A293F0E92B95BDCF987288C25816 /* FenigeSDK */,
+				B67036E2BD005A0DC75DCBC4A1C1E37C /* Pods-FenigeSDKExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A51E05E6CF2BCBCEB8BF75E6D819C604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73BC52436B3984A7E1E5F13B3FE712B6 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FenigeSDK/FenigeSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/FenigeSDK/FenigeSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FenigeSDK/FenigeSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF24E217FB4AC1D431A6D9DC5DE60020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE914C8F8A6092EE739CE5F23E25F91 /* Pods-FenigeSDKExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C8D6E197A1D0EFBA97B4AEBF26C3E63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FenigeSDK;
+			target = E500A293F0E92B95BDCF987288C25816 /* FenigeSDK */;
+			targetProxy = 2FDE04945F006CD438712F77F40035F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15A7766C0F76F2168753588905966E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B7FD3DBB3F641BD1FBA2F14B9AF216 /* FenigeSDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		45227E2303FF7B2E9829A6F4C918E302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1449D5E7A89BC8CFEEE29BBB0011DEE /* FenigeSDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B4D39EE9548721C52760E2F6C510C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1998034C7BEF732DE504F18066E533 /* Pods-FenigeSDKExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FenigeSDKExample/Pods-FenigeSDKExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FenigeSDKExample/Pods-FenigeSDKExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F2516EDDDA2CDE46D2469DD82B5A7CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286A499C7142088CF91262CE1AEB634C /* Pods-FenigeSDKExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FenigeSDKExample/Pods-FenigeSDKExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FenigeSDKExample/Pods-FenigeSDKExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DCAA27FB1AECD2FEF6AF36F0C38BA81 /* Build configuration list for PBXAggregateTarget "FenigeSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45227E2303FF7B2E9829A6F4C918E302 /* Debug */,
+				15A7766C0F76F2168753588905966E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A46CD4202FA4696C72C89D41D6905E /* Build configuration list for PBXNativeTarget "Pods-FenigeSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2516EDDDA2CDE46D2469DD82B5A7CF0 /* Debug */,
+				5B4D39EE9548721C52760E2F6C510C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

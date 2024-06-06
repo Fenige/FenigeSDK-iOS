@@ -1,0 +1,55 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FenigeSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AppKit
+import DeveloperToolsSupport
+@_exported import FenigeSDK
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class Fenige {
+  public init()
+  public func initPayment(apiKey: Swift.String, payment: FenigeSDK.Payment, containerViewController: UIKit.UIViewController, completion: ((Swift.String?) -> Swift.Void?)? = nil)
+  @objc deinit
+}
+public struct Payment : Swift.Encodable {
+  public let transactionId: Swift.String
+  public let currencyCode: Swift.String
+  public let amount: Swift.Int
+  public let description: Swift.String
+  public let formLanguage: Swift.String
+  public let redirectUrl: FenigeSDK.RedirectUrl
+  public let sender: FenigeSDK.Sender
+  public let merchantUrl: Swift.String
+  public let orderNumber: Swift.String
+  public init(transactionId: Swift.String, currencyCode: Swift.String, amount: Swift.Int, description: Swift.String, formLanguage: Swift.String, redirectUrl: FenigeSDK.RedirectUrl, sender: FenigeSDK.Sender, merchantUrl: Swift.String, orderNumber: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Sender : Swift.Encodable {
+  public let firstName: Swift.String
+  public let lastName: Swift.String
+  public let address: FenigeSDK.Address
+  public init(firstName: Swift.String, lastName: Swift.String, address: FenigeSDK.Address)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Address : Swift.Encodable {
+  public let countryCode: Swift.String
+  public let city: Swift.String
+  public let postalCode: Swift.String
+  public let street: Swift.String
+  public let houseNumber: Swift.String
+  public init(countryCode: Swift.String, city: Swift.String, postalCode: Swift.String, street: Swift.String, houseNumber: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct RedirectUrl : Swift.Encodable {
+  public let successUrl: Swift.String
+  public let failureUrl: Swift.String
+  public init(successUrl: Swift.String, failureUrl: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
