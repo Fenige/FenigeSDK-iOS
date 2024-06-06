@@ -38,7 +38,7 @@ let sender = Sender(firstName: "Test",
                     lastName: "Testowy",
                     address: address)
 
-let payment = Payment(transactionId: "39c92ae5-90bc-4a9f-9a29-661d958ffa41",
+let payment = Payment(transactionId: "0000-0000-0000-0000-0000",
                       currencyCode: "USD",
                       amount: 10,
                       description: "Test transaction",
