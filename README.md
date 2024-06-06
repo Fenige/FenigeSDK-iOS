@@ -24,7 +24,7 @@ import FenigeSDK
 
 ### Init Payment
 
-You can init payment and will have callback with `Transaction ID`
+You can init payment and will have callback with `Transaction ID`:
 ```swift
 let redirectUrl = RedirectUrl(successUrl: "https://paytool-dev.fenige.pl/demo/?success=1",
                               failureUrl: "https://paytool-dev.fenige.pl/demo/?success=0")
@@ -50,9 +50,9 @@ let payment = Payment(transactionId: "39c92ae5-90bc-4a9f-9a29-661d958ffa41",
                       orderNumber: "1")
 
 fenigeSDKInstance.initPayment(apiKey: "0000-0000-0000-0000-0000", payment: payment, containerViewController: self, completion: { [weak self] (transactionId: String?) in
-	let transactionIdText = transactionId ?? "NIL"
-	print("Transaction ID: " + transactionIdText)
-	self?.displayTransactionId(transactionIdText)
+    let transactionIdText = transactionId ?? "NIL"
+    print("Transaction ID: " + transactionIdText)
+    self?.displayTransactionId(transactionIdText)
 })
 ```
 
