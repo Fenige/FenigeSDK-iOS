@@ -61,16 +61,16 @@ fenigeSDKInstance.initPayment(environment: .production, apiKey: "0000-0000-0000-
 })
 ```
 
-|Field|Type|Constraints|Description|
-|--|--|--|--|
-|environment|Enum|@Must not be null|Environment .development or .production
-|apiKey|String|@Must not be null|This is the value you receive from the payment gateway provider for production and staging environment. It is necessary to be identified in our system
-|currencyCode|String|@Must not be null|Currency for transaction (in accordance with ISO-4217), example: USD
-|amount|Int|@Must not be null, @Length(min = 1)|The total transfer amount (in pennies - 1PLN = 100)
-|receiverAmount|String|'Information field only. Field determine receiving amount of cash transferred in one hundredth of the currency. [1PLN = 100]'
+|Field|Type|Description|
+|--|--|--|
+|environment|Enum|Environment .development or .production
+|apiKey|String|This is the value you receive from the payment gateway provider for production and staging environment. It is necessary to be identified in our system
+|currencyCode|String|Currency for transaction (in accordance with ISO-4217), example: USD
+|amount|Int|The total transfer amount (in pennies - 1PLN = 100)
+|receiverAmount|String|Information field only. Field determine receiving amount of cash transferred in one hundredth of the currency. [1PLN = 100]
 |description|String|Description of the transaction, which indicates what the user is paying for
 |merchantUrl|String|URL address of merchant web system
-|orderNumber|String|@Length(min = 0, max = 255)|Declarative number of order that is just purchased by cardholder, set by merchant, should be unique
+|orderNumber|String|Declarative number of order that is just purchased by cardholder, set by merchant, should be unique
 |formLanguage|String|Language of transaction process in web browser in accordance with ISO 3166-1 Alpha-2, use only lowercas
 |redirectUrl.successUrl|String|URL of merchant web service to forward after successful payment flow
 |redirectUrl.failureUrl|String|URL of merchant web service to forward after failure payment flow
@@ -82,7 +82,7 @@ fenigeSDKInstance.initPayment(environment: .production, apiKey: "0000-0000-0000-
 |sender.adress.street|String|Street name in the city
 |sender.adress.houseNumber|String|House number with optional flat number
 |transactionConfigurationId|String|Terminal’s unique uuid to process payment
-|autoClear|Bool|Default is true|Automaticly this parameter is on true. It mean that transaction will be cleared automaticly by fenige in few hours. You can set this parameter as false butyou must remember to clear your transaction.
+|autoClear|Bool|Automaticly this parameter is on true. It mean that transaction will be cleared automaticly by fenige in few hours. You can set this parameter as false butyou must remember to clear your transaction.
 
 ## Author
 
