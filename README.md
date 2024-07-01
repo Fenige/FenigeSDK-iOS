@@ -47,9 +47,10 @@ let payment = Payment(transactionId: "0000-0000-0000-0000-0000",
                       redirectUrl: redirectUrl,
                       sender: sender,
                       merchantUrl: "https://paytool-dev.fenige.pl/demo/",
-                      orderNumber: "1")
+                      orderNumber: "1",
+                      autoClear: true)
 
-fenigeSDKInstance.initPayment(apiKey: "0000-0000-0000-0000-0000", payment: payment, containerViewController: self, completion: { [weak self] (transactionId: String?) in
+fenigeSDKInstance.initPayment(environment: .production, apiKey: "0000-0000-0000-0000-0000", payment: payment, containerViewController: self, completion: { [weak self] (transactionId: String?) in
     let transactionIdText = transactionId ?? "NIL"
     print("Transaction ID: " + transactionIdText)
 })
