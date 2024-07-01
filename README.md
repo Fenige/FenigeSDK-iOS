@@ -1,3 +1,4 @@
+
 # FenigeSDK
 
 ![Swift 5.0+](https://img.shields.io/badge/Swift-5.0%2B-orange.svg)
@@ -55,6 +56,28 @@ fenigeSDKInstance.initPayment(environment: .production, apiKey: "0000-0000-0000-
     print("Transaction ID: " + transactionIdText)
 })
 ```
+
+|Field|Type|Constraints|Description|
+|--|--|--|--|
+|apiKey|String|@Must not be null|This is the value you receive from the payment gateway provider for production and staging environment. It is necessary to be identified in our system
+|currencyCode|String|@Must not be null|Currency for transaction (in accordance with ISO-4217), example: USD
+|amount|Int|@Must not be null, @Length(min = 1)|The total transfer amount (in pennies - 1PLN = 100)
+|receiverAmount|String|'Information field only. Field determine receiving amount of cash transferred in one hundredth of the currency. [1PLN = 100]'
+|description|String|Description of the transaction, which indicates what the user is paying for
+|merchantUrl|String|URL address of merchant web system
+|orderNumber|String|@Length(min = 0, max = 255)|Declarative number of order that is just purchased by cardholder, set by merchant, should be unique
+|formLanguage|String|Language of transaction process in web browser in accordance with ISO 3166-1 Alpha-2, use only lowercas
+|redirectUrl.successUrl|String|URL of merchant web service to forward after successful payment flow
+|redirectUrl.failureUrl|String|URL of merchant web service to forward after failure payment flow
+|sender.firstName|String|Cardholder's first name
+|sender.lastName|String|Cardholder's last name
+|sender.adress.countryCode|String|Two character ISO 3166-1 alpha-2 code of country
+|sender.adress.city|String|Name of the cardholder city
+|sender.adress.postalCode|String|Postal code of this address
+|sender.adress.street|String|Street name in the city
+|sender.adress.houseNumber|String|House number with optional flat number
+|transactionConfigurationId|String|Terminal’s unique uuid to process payment
+
 
 ## Author
 
