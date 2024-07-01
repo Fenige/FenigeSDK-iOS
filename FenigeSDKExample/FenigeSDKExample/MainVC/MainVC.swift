@@ -64,7 +64,7 @@ private extension MainVC {
 							lastName: "Testowy",
 							address: address)
 		
-		let payment = Payment(transactionId: "ff354ad0-a24a-4a02-99bd-4e8d01212c65",
+		let payment = Payment(transactionId: "0000-0000-0000-0000-0000",
 							  currencyCode: "PLN",
 							  amount: 100,
 							  description: "Test description",
@@ -75,7 +75,7 @@ private extension MainVC {
 							  orderNumber: "1",
 							  autoClear: true)
 		
-		fenigeSDKInstance.initPayment(environment: .production, apiKey: "bfd5061e-9455-4f74-b688-d19ab3643808", payment: payment, containerViewController: self, completion: { [weak self] (transactionId: String?, error: FenigeError?) in
+		fenigeSDKInstance.initPayment(environment: .production, apiKey: "0000-0000-0000-0000-0000", payment: payment, containerViewController: self, completion: { [weak self] (transactionId: String?, error: FenigeError?) in
 			
 			if let err = error {
 				print("Error: " + err.localizedDescription)
