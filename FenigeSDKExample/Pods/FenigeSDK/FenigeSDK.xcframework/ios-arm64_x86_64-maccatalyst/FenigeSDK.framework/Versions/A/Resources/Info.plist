@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>FenigeSDK</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.peakscircle.FenigeSDK</string>
+	<string>com.fenige.FenigeSDK</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
