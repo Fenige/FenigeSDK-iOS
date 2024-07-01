@@ -27,8 +27,8 @@ You can init payment and will have callback with `Transaction ID`:
 ```swift
 let fenigeSDKInstance = Fenige()
 
-let redirectUrl = RedirectUrl(successUrl: "https://paytool-dev.fenige.pl/demo/?success=1",
-                              failureUrl: "https://paytool-dev.fenige.pl/demo/?success=0")
+let redirectUrl = RedirectUrl(successUrl: "https://paytool.fenige.pl/demo/?success=1",
+                              failureUrl: "https://paytool.fenige.pl/demo/?success=0")
 
 let address = Address(countryCode: "PL",
                       city: "Testowo",
@@ -47,18 +47,23 @@ let payment = Payment(transactionId: "0000-0000-0000-0000-0000",
                       formLanguage: "en",
                       redirectUrl: redirectUrl,
                       sender: sender,
-                      merchantUrl: "https://paytool-dev.fenige.pl/demo/",
+                      merchantUrl: "https://paytool.fenige.pl/demo/",
                       orderNumber: "1",
                       autoClear: true)
 
-fenigeSDKInstance.initPayment(environment: .production, apiKey: "0000-0000-0000-0000-0000", payment: payment, containerViewController: self, completion: { [weak self] (transactionId: String?) in
-    let transactionIdText = transactionId ?? "NIL"
+fenigeSDKInstance.initPayment(environment: .production, apiKey: "0000-0000-0000-0000-0000", payment: payment, containerViewController: self, completion: { [weak self] (transactionId: String?, error: FenigeError?) in
+  if let err = error {
+    print("Error: " + err.localizedDescription)
+  }
+
+  let transactionIdText = transactionId ?? "NIL"
     print("Transaction ID: " + transactionIdText)
 })
 ```
 
 |Field|Type|Constraints|Description|
 |--|--|--|--|
+|environment|Enum|@Must not be null|Environment .development or .production
 |apiKey|String|@Must not be null|This is the value you receive from the payment gateway provider for production and staging environment. It is necessary to be identified in our system
 |currencyCode|String|@Must not be null|Currency for transaction (in accordance with ISO-4217), example: USD
 |amount|Int|@Must not be null, @Length(min = 1)|The total transfer amount (in pennies - 1PLN = 100)
