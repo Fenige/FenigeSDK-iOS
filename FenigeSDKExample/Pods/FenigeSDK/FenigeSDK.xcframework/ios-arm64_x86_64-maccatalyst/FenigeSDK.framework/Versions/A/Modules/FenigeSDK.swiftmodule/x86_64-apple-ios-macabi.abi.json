@@ -16,6 +16,33 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FenigeSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "FenigeSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FenigeSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -70,12 +97,18 @@
           {
             "kind": "Function",
             "name": "initPayment",
-            "printedName": "initPayment(apiKey:payment:containerViewController:completion:)",
+            "printedName": "initPayment(environment:apiKey:payment:containerViewController:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FenigeEnvironment",
+                "printedName": "FenigeSDK.FenigeEnvironment",
+                "usr": "s:9FenigeSDK0A11EnvironmentO"
               },
               {
                 "kind": "TypeNominal",
@@ -98,12 +131,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.String?) -> ()?)?",
+                "printedName": "((Swift.String?, FenigeSDK.FenigeError?) -> ()?)?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.String?) -> ()?",
+                    "printedName": "(Swift.String?, FenigeSDK.FenigeError?) -> ()?",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -120,17 +153,38 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String?, FenigeSDK.FenigeError?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "FenigeSDK.FenigeError?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "FenigeError",
+                                "printedName": "FenigeSDK.FenigeError",
+                                "usr": "s:9FenigeSDK0A5ErrorO"
+                              }
+                            ],
+                            "usr": "s:Sq"
                           }
-                        ],
-                        "usr": "s:Sq"
+                        ]
                       }
                     ]
                   }
@@ -140,8 +194,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9FenigeSDK0A0C11initPayment6apiKey7payment23containerViewController10completionySS_AA0D0VSo06UIViewJ0CytSgSSSgcSgtF",
-            "mangledName": "$s9FenigeSDK0A0C11initPayment6apiKey7payment23containerViewController10completionySS_AA0D0VSo06UIViewJ0CytSgSSSgcSgtF",
+            "usr": "s:9FenigeSDK0A0C11initPayment11environment6apiKey7payment23containerViewController10completionyAA0A11EnvironmentO_SSAA0D0VSo06UIViewK0CytSgSSSg_AA0A5ErrorOSgtcSgtF",
+            "mangledName": "$s9FenigeSDK0A0C11initPayment11environment6apiKey7payment23containerViewController10completionyAA0A11EnvironmentO_SSAA0D0VSo06UIViewK0CytSgSSSg_AA0A5ErrorOSgtcSgtF",
             "moduleName": "FenigeSDK",
             "declAttributes": [
               "AccessControl"
@@ -165,6 +219,954 @@
         "moduleName": "FenigeSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FenigeSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FenigeEnvironment",
+        "printedName": "FenigeEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "development",
+            "printedName": "development",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FenigeSDK.FenigeEnvironment.Type) -> FenigeSDK.FenigeEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FenigeEnvironment",
+                    "printedName": "FenigeSDK.FenigeEnvironment",
+                    "usr": "s:9FenigeSDK0A11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FenigeSDK.FenigeEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FenigeEnvironment",
+                        "printedName": "FenigeSDK.FenigeEnvironment",
+                        "usr": "s:9FenigeSDK0A11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9FenigeSDK0A11EnvironmentO11developmentyA2CmF",
+            "mangledName": "$s9FenigeSDK0A11EnvironmentO11developmentyA2CmF",
+            "moduleName": "FenigeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "production",
+            "printedName": "production",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FenigeSDK.FenigeEnvironment.Type) -> FenigeSDK.FenigeEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FenigeEnvironment",
+                    "printedName": "FenigeSDK.FenigeEnvironment",
+                    "usr": "s:9FenigeSDK0A11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FenigeSDK.FenigeEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FenigeEnvironment",
+                        "printedName": "FenigeSDK.FenigeEnvironment",
+                        "usr": "s:9FenigeSDK0A11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9FenigeSDK0A11EnvironmentO10productionyA2CmF",
+            "mangledName": "$s9FenigeSDK0A11EnvironmentO10productionyA2CmF",
+            "moduleName": "FenigeSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FenigeEnvironment",
+                "printedName": "FenigeSDK.FenigeEnvironment",
+                "usr": "s:9FenigeSDK0A11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FenigeEnvironment",
+                "printedName": "FenigeSDK.FenigeEnvironment",
+                "usr": "s:9FenigeSDK0A11EnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9FenigeSDK0A11EnvironmentO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9FenigeSDK0A11EnvironmentO2eeoiySbAC_ACtFZ",
+            "moduleName": "FenigeSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9FenigeSDK0A11EnvironmentO9hashValueSivp",
+            "mangledName": "$s9FenigeSDK0A11EnvironmentO9hashValueSivp",
+            "moduleName": "FenigeSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9FenigeSDK0A11EnvironmentO9hashValueSivg",
+                "mangledName": "$s9FenigeSDK0A11EnvironmentO9hashValueSivg",
+                "moduleName": "FenigeSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9FenigeSDK0A11EnvironmentO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s9FenigeSDK0A11EnvironmentO4hash4intoys6HasherVz_tF",
+            "moduleName": "FenigeSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9FenigeSDK0A11EnvironmentO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9FenigeSDK0A11EnvironmentO6encode2toys7Encoder_p_tKF",
+            "moduleName": "FenigeSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9FenigeSDK0A11EnvironmentO",
+        "mangledName": "$s9FenigeSDK0A11EnvironmentO",
+        "moduleName": "FenigeSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FenigeServerError",
+        "printedName": "FenigeServerError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "errorType",
+            "printedName": "errorType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ErrorType",
+                "printedName": "FenigeSDK.ErrorType",
+                "usr": "s:9FenigeSDK9ErrorTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9FenigeSDK0A11ServerErrorV9errorTypeAA0dF0Ovp",
+            "mangledName": "$s9FenigeSDK0A11ServerErrorV9errorTypeAA0dF0Ovp",
+            "moduleName": "FenigeSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErrorType",
+                    "printedName": "FenigeSDK.ErrorType",
+                    "usr": "s:9FenigeSDK9ErrorTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9FenigeSDK0A11ServerErrorV9errorTypeAA0dF0Ovg",
+                "mangledName": "$s9FenigeSDK0A11ServerErrorV9errorTypeAA0dF0Ovg",
+                "moduleName": "FenigeSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErrorType",
+                    "printedName": "FenigeSDK.ErrorType",
+                    "usr": "s:9FenigeSDK9ErrorTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9FenigeSDK0A11ServerErrorV9errorTypeAA0dF0Ovs",
+                "mangledName": "$s9FenigeSDK0A11ServerErrorV9errorTypeAA0dF0Ovs",
+                "moduleName": "FenigeSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9FenigeSDK0A11ServerErrorV9errorTypeAA0dF0OvM",
+                "mangledName": "$s9FenigeSDK0A11ServerErrorV9errorTypeAA0dF0OvM",
+                "moduleName": "FenigeSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9FenigeSDK0A11ServerErrorV7messageSSSgvp",
+            "mangledName": "$s9FenigeSDK0A11ServerErrorV7messageSSSgvp",
+            "moduleName": "FenigeSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9FenigeSDK0A11ServerErrorV7messageSSSgvg",
+                "mangledName": "$s9FenigeSDK0A11ServerErrorV7messageSSSgvg",
+                "moduleName": "FenigeSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9FenigeSDK0A11ServerErrorV7messageSSSgvs",
+                "mangledName": "$s9FenigeSDK0A11ServerErrorV7messageSSSgvs",
+                "moduleName": "FenigeSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9FenigeSDK0A11ServerErrorV7messageSSSgvM",
+                "mangledName": "$s9FenigeSDK0A11ServerErrorV7messageSSSgvM",
+                "moduleName": "FenigeSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FenigeServerError",
+                "printedName": "FenigeSDK.FenigeServerError",
+                "usr": "s:9FenigeSDK0A11ServerErrorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9FenigeSDK0A11ServerErrorV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9FenigeSDK0A11ServerErrorV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FenigeSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9FenigeSDK0A11ServerErrorV",
+        "mangledName": "$s9FenigeSDK0A11ServerErrorV",
+        "moduleName": "FenigeSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FenigeError",
+        "printedName": "FenigeError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "serverError",
+            "printedName": "serverError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FenigeSDK.FenigeError.Type) -> (FenigeSDK.FenigeServerError) -> FenigeSDK.FenigeError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(FenigeSDK.FenigeServerError) -> FenigeSDK.FenigeError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FenigeError",
+                        "printedName": "FenigeSDK.FenigeError",
+                        "usr": "s:9FenigeSDK0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FenigeServerError",
+                        "printedName": "FenigeSDK.FenigeServerError",
+                        "usr": "s:9FenigeSDK0A11ServerErrorV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FenigeSDK.FenigeError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FenigeError",
+                        "printedName": "FenigeSDK.FenigeError",
+                        "usr": "s:9FenigeSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9FenigeSDK0A5ErrorO06serverC0yAcA0a6ServerC0VcACmF",
+            "mangledName": "$s9FenigeSDK0A5ErrorO06serverC0yAcA0a6ServerC0VcACmF",
+            "moduleName": "FenigeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FenigeSDK.FenigeError.Type) -> (Swift.Error) -> FenigeSDK.FenigeError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> FenigeSDK.FenigeError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FenigeError",
+                        "printedName": "FenigeSDK.FenigeError",
+                        "usr": "s:9FenigeSDK0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FenigeSDK.FenigeError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FenigeError",
+                        "printedName": "FenigeSDK.FenigeError",
+                        "usr": "s:9FenigeSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9FenigeSDK0A5ErrorO5erroryACs0C0_pcACmF",
+            "mangledName": "$s9FenigeSDK0A5ErrorO5erroryACs0C0_pcACmF",
+            "moduleName": "FenigeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FenigeSDK.FenigeError.Type) -> FenigeSDK.FenigeError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FenigeError",
+                    "printedName": "FenigeSDK.FenigeError",
+                    "usr": "s:9FenigeSDK0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FenigeSDK.FenigeError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FenigeError",
+                        "printedName": "FenigeSDK.FenigeError",
+                        "usr": "s:9FenigeSDK0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9FenigeSDK0A5ErrorO7unknownyA2CmF",
+            "mangledName": "$s9FenigeSDK0A5ErrorO7unknownyA2CmF",
+            "moduleName": "FenigeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "localizedDescription",
+            "printedName": "localizedDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9FenigeSDK0A5ErrorO20localizedDescriptionSSvp",
+            "mangledName": "$s9FenigeSDK0A5ErrorO20localizedDescriptionSSvp",
+            "moduleName": "FenigeSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9FenigeSDK0A5ErrorO20localizedDescriptionSSvg",
+                "mangledName": "$s9FenigeSDK0A5ErrorO20localizedDescriptionSSvg",
+                "moduleName": "FenigeSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9FenigeSDK0A5ErrorO",
+        "mangledName": "$s9FenigeSDK0A5ErrorO",
+        "moduleName": "FenigeSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ErrorType",
+        "printedName": "ErrorType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[FenigeSDK.ErrorType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErrorType",
+                    "printedName": "FenigeSDK.ErrorType",
+                    "usr": "s:9FenigeSDK9ErrorTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9FenigeSDK9ErrorTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s9FenigeSDK9ErrorTypeO8allCasesSayACGvpZ",
+            "moduleName": "FenigeSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[FenigeSDK.ErrorType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErrorType",
+                        "printedName": "FenigeSDK.ErrorType",
+                        "usr": "s:9FenigeSDK9ErrorTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9FenigeSDK9ErrorTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s9FenigeSDK9ErrorTypeO8allCasesSayACGvgZ",
+                "moduleName": "FenigeSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "merchantNotExists",
+            "printedName": "merchantNotExists",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FenigeSDK.ErrorType.Type) -> FenigeSDK.ErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErrorType",
+                    "printedName": "FenigeSDK.ErrorType",
+                    "usr": "s:9FenigeSDK9ErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FenigeSDK.ErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErrorType",
+                        "printedName": "FenigeSDK.ErrorType",
+                        "usr": "s:9FenigeSDK9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9FenigeSDK9ErrorTypeO17merchantNotExistsyA2CmF",
+            "mangledName": "$s9FenigeSDK9ErrorTypeO17merchantNotExistsyA2CmF",
+            "moduleName": "FenigeSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FenigeSDK.ErrorType.Type) -> (Swift.String?) -> FenigeSDK.ErrorType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?) -> FenigeSDK.ErrorType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErrorType",
+                        "printedName": "FenigeSDK.ErrorType",
+                        "usr": "s:9FenigeSDK9ErrorTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FenigeSDK.ErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErrorType",
+                        "printedName": "FenigeSDK.ErrorType",
+                        "usr": "s:9FenigeSDK9ErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9FenigeSDK9ErrorTypeO7unknownyACSSSgcACmF",
+            "mangledName": "$s9FenigeSDK9ErrorTypeO7unknownyACSSSgcACmF",
+            "moduleName": "FenigeSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "codeError",
+            "printedName": "codeError()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9FenigeSDK9ErrorTypeO04codeC0SSyF",
+            "mangledName": "$s9FenigeSDK9ErrorTypeO04codeC0SSyF",
+            "moduleName": "FenigeSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ErrorType",
+                "printedName": "FenigeSDK.ErrorType",
+                "usr": "s:9FenigeSDK9ErrorTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9FenigeSDK9ErrorTypeO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9FenigeSDK9ErrorTypeO4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FenigeSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9FenigeSDK9ErrorTypeO",
+        "mangledName": "$s9FenigeSDK9ErrorTypeO",
+        "moduleName": "FenigeSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[FenigeSDK.ErrorType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErrorType",
+                        "printedName": "FenigeSDK.ErrorType",
+                        "usr": "s:9FenigeSDK9ErrorTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          }
         ]
       },
       {
@@ -569,9 +1571,53 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "autoClear",
+            "printedName": "autoClear",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9FenigeSDK7PaymentV9autoClearSbvp",
+            "mangledName": "$s9FenigeSDK7PaymentV9autoClearSbvp",
+            "moduleName": "FenigeSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9FenigeSDK7PaymentV9autoClearSbvg",
+                "mangledName": "$s9FenigeSDK7PaymentV9autoClearSbvg",
+                "moduleName": "FenigeSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(transactionId:currencyCode:amount:description:formLanguage:redirectUrl:sender:merchantUrl:orderNumber:)",
+            "printedName": "init(transactionId:currencyCode:amount:description:formLanguage:redirectUrl:sender:merchantUrl:orderNumber:autoClear:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -632,11 +1678,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9FenigeSDK7PaymentV13transactionId12currencyCode6amount11description12formLanguage11redirectUrl6sender08merchantM011orderNumberACSS_SSSiS2SAA08RedirectM0VAA6SenderVS2Stcfc",
-            "mangledName": "$s9FenigeSDK7PaymentV13transactionId12currencyCode6amount11description12formLanguage11redirectUrl6sender08merchantM011orderNumberACSS_SSSiS2SAA08RedirectM0VAA6SenderVS2Stcfc",
+            "usr": "s:9FenigeSDK7PaymentV13transactionId12currencyCode6amount11description12formLanguage11redirectUrl6sender08merchantM011orderNumber9autoClearACSS_SSSiS2SAA08RedirectM0VAA6SenderVS2SSbtcfc",
+            "mangledName": "$s9FenigeSDK7PaymentV13transactionId12currencyCode6amount11description12formLanguage11redirectUrl6sender08merchantM011orderNumber9autoClearACSS_SSSiS2SAA08RedirectM0VAA6SenderVS2SSbtcfc",
             "moduleName": "FenigeSDK",
             "declAttributes": [
               "AccessControl"
@@ -1395,6 +2447,13 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FenigeSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1412,23 +2471,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "FenigeSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "FenigeSDK"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1439,8 +2481,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "FenigeSDK",
         "declAttributes": [
@@ -1561,301 +2603,399 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/EndPoints\/GetTransactionId.swift",
-      "kind": "StringLiteral",
-      "offset": 343,
-      "length": 33,
-      "value": "\"transactions\/pre-initialization\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/EndPoints\/GetTransactionId.swift",
-      "kind": "StringLiteral",
-      "offset": 438,
-      "length": 9,
-      "value": "\"Api-Key\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/EndPoints\/GetTransactionId.swift",
-      "kind": "StringLiteral",
-      "offset": 219,
-      "length": 16,
-      "value": "\"FenigeSDK.GetTransactionId\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 618,
-      "length": 32,
-      "value": "\"https:\/\/paytool-dev.fenige.pl\/\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1470,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
-      "kind": "FloatLiteral",
-      "offset": 1589,
-      "length": 3,
-      "value": "0.1"
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1643,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1662,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1951,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
-      "kind": "StringLiteral",
-      "offset": 320,
-      "length": 8,
-      "value": "\"DELETE\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
-      "kind": "StringLiteral",
-      "offset": 373,
-      "length": 5,
-      "value": "\"GET\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
-      "kind": "StringLiteral",
-      "offset": 424,
-      "length": 6,
-      "value": "\"POST\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
-      "kind": "StringLiteral",
-      "offset": 475,
-      "length": 5,
-      "value": "\"PUT\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
-      "kind": "StringLiteral",
-      "offset": 688,
-      "length": 35,
-      "value": "\"https:\/\/paytool-api-dev.fenige.pl\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
-      "kind": "StringLiteral",
-      "offset": 1116,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
-      "kind": "StringLiteral",
-      "offset": 1552,
-      "length": 16,
-      "value": "\"FenigeSDK.EndpointBaseItem\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
-      "kind": "StringLiteral",
-      "offset": 3263,
-      "length": 14,
-      "value": "\"CODE_EXPIRED\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
-      "kind": "StringLiteral",
-      "offset": 3293,
-      "length": 89,
-      "value": "\"Закінчився термін дії коду. Запросіть новий код\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
-      "kind": "StringLiteral",
-      "offset": 3525,
-      "length": 106,
-      "value": "\"Невідома помилка. Будь ласка, повторіть операцію пізніше\""
-    },
-    {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 441,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 702,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 889,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 1378,
       "length": 10,
       "value": "\"ic_close\""
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1642,
+      "offset": 1643,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1793,
+      "offset": 1794,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1869,
+      "offset": 1870,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1929,
+      "offset": 1930,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1990,
+      "offset": 1991,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2341,
+      "offset": 2342,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 260,
       "length": 17,
       "value": "\"FenigeSDK.WebViewController\""
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Controllers\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2694,
+      "offset": 2695,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
       "kind": "StringLiteral",
       "offset": 289,
       "length": 5,
       "value": "\"API\""
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
       "kind": "Dictionary",
       "offset": 790,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
       "kind": "Array",
       "offset": 1252,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
       "kind": "StringLiteral",
       "offset": 1898,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
       "kind": "StringLiteral",
       "offset": 1938,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
       "kind": "StringLiteral",
       "offset": 1979,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
       "kind": "StringLiteral",
       "offset": 2019,
       "length": 8,
       "value": "\"Accept\""
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
       "kind": "StringLiteral",
       "offset": 2457,
       "length": 9,
       "value": "\"UNKNOWN\""
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
       "kind": "StringLiteral",
       "offset": 2718,
       "length": 6,
       "value": "\"NONE\""
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
       "kind": "StringLiteral",
       "offset": 2943,
       "length": 6,
       "value": "\"NONE\""
     },
     {
-      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "kind": "StringLiteral",
+      "offset": 3075,
+      "length": 224,
+      "value": "\"Request: [\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "kind": "StringLiteral",
+      "offset": 3115,
+      "length": 1,
+      "value": "\"] \""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "kind": "StringLiteral",
+      "offset": 3130,
+      "length": 10,
+      "value": "\"\nAdditional headers: \""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "kind": "StringLiteral",
+      "offset": 3198,
+      "length": 7,
+      "value": "\"\nHeaders: \""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "kind": "StringLiteral",
+      "offset": 3245,
+      "length": 4,
+      "value": "\"\nBody: \""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "kind": "StringLiteral",
+      "offset": 3267,
+      "length": 8,
+      "value": "\"\nResponse: \""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
+      "kind": "StringLiteral",
+      "offset": 3294,
+      "length": 1052,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac+ManagerAC.swift",
       "kind": "Array",
-      "offset": 3956,
+      "offset": 4098,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/dmytro\/Library\/Developer\/Xcode\/DerivedData\/FenigeSDK-dpnewhbxpadesjfalwizilkqmgfs\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Release\/IntermediateBuildFilesPath\/FenigeSDK.build\/Release-maccatalyst\/FenigeSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1709,
+      "length": 39,
+      "value": "\"com.peakscircle.FenigeSDK.ErrorDomain\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1763,
+      "length": 4,
+      "value": "1001"
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1834,
+      "length": 31,
+      "value": "\"An unexpected error occurred.\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1905,
+      "length": 40,
+      "value": "\"The operation couldn’t be completed.\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1990,
+      "length": 25,
+      "value": "\"Please try again later.\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2286,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
+      "kind": "FloatLiteral",
+      "offset": 2405,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2459,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2478,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2767,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/EndPoints\/GetTransactionId.swift",
+      "kind": "StringLiteral",
+      "offset": 343,
+      "length": 33,
+      "value": "\"transactions\/pre-initialization\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/EndPoints\/GetTransactionId.swift",
+      "kind": "StringLiteral",
+      "offset": 438,
+      "length": 9,
+      "value": "\"Api-Key\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/EndPoints\/GetTransactionId.swift",
+      "kind": "StringLiteral",
+      "offset": 219,
+      "length": 16,
+      "value": "\"FenigeSDK.GetTransactionId\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Models\/Public Classes.swift",
+      "kind": "StringLiteral",
+      "offset": 674,
+      "length": 40,
+      "value": "\"Unknown error. Please try again later.\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Models\/Public Classes.swift",
+      "kind": "StringLiteral",
+      "offset": 1012,
+      "length": 21,
+      "value": "\"MERCHANT_NOT_EXISTS\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/Models\/Public Classes.swift",
+      "kind": "StringLiteral",
+      "offset": 1095,
+      "length": 15,
+      "value": "\"UNKNOWN_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
+      "kind": "StringLiteral",
+      "offset": 320,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
+      "kind": "StringLiteral",
+      "offset": 373,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
+      "kind": "StringLiteral",
+      "offset": 424,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
+      "kind": "StringLiteral",
+      "offset": 475,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
+      "kind": "StringLiteral",
+      "offset": 688,
+      "length": 31,
+      "value": "\"https:\/\/paytool-api.fenige.pl\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
+      "kind": "StringLiteral",
+      "offset": 1112,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
+      "kind": "StringLiteral",
+      "offset": 1548,
+      "length": 16,
+      "value": "\"FenigeSDK.EndpointBaseItem\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/API\/APIac.swift",
+      "kind": "StringLiteral",
+      "offset": 3410,
+      "length": 40,
+      "value": "\"Unknown error. Please try again later.\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 277,
+      "length": 28,
+      "value": "\"https:\/\/paytool.fenige.pl\/\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Documents\/XcodeProjects\/PeaksCircle\/FenigeSDK\/FenigeSDK-Source-Code\/FenigeSDK\/FenigeConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 339,
+      "length": 32,
+      "value": "\"https:\/\/paytool-dev.fenige.pl\/\""
+    },
+    {
+      "filePath": "\/Users\/dmytro\/Library\/Developer\/Xcode\/DerivedData\/FenigeSDK-gagocylbwopdvcdwdazfqankwaiq\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Release\/IntermediateBuildFilesPath\/FenigeSDK.build\/Release-maccatalyst\/FenigeSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 728,
       "length": 10,

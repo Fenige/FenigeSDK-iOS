@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		IBCeKHorUXA3+2+a6az6vkrhHDg=
+		8Jr9UB6fkLrBP5bx8vI3mgFws54=
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WdUczNm1Z9fKYFP95IVbHjB+H3k=
+		CKqTE3DaCtYhyy4AEdjKnTk3/IY=
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WdUczNm1Z9fKYFP95IVbHjB+H3k=
+		CKqTE3DaCtYhyy4AEdjKnTk3/IY=
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8kR59YOx6AWs5sGWhSi/lzr3EsI=
+		ym4Et7xeXpUYCvh4/sLpPWX1A+w=
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		IBCeKHorUXA3+2+a6az6vkrhHDg=
+		8Jr9UB6fkLrBP5bx8vI3mgFws54=
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		UOdUXskUYTzwCb26W0Xj2VGmBSk=
+		sieaGJ1f7KFo0sE7ouU42Hf0D8k=
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		UOdUXskUYTzwCb26W0Xj2VGmBSk=
+		sieaGJ1f7KFo0sE7ouU42Hf0D8k=
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		H3V+uAYAJW5lAXBf3Q33JBuTs3U=
+		MFTFUJXyIvND6N/BcqA1Qljj2uQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,14 +92,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			18nqowX2Jwt0MsGJRQJGJGA+UpDChTK6SGt0vC7BfSI=
+			d8/NSE4kbkIxr8IZRI9u/LXpzly0IHQAb80fHzFngTw=
 			</data>
 		</dict>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			odooNJj8SCE43gWMbW6ebhR3hsAZfStWvKn1C8wCoMk=
+			4O2qPVrj5RoTBopX35ay6VRZ3idzWVDSNGRX9uDYx2Q=
 			</data>
 		</dict>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -113,28 +113,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			odooNJj8SCE43gWMbW6ebhR3hsAZfStWvKn1C8wCoMk=
+			4O2qPVrj5RoTBopX35ay6VRZ3idzWVDSNGRX9uDYx2Q=
 			</data>
 		</dict>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WiR+EGuuFm26z/4qLWPNyM1AGuHYLRJAwyzScuDnKCM=
+			pp2DIJCC7Sy43xfb33hBgcMbq4UjLfYUnTWfb35elX0=
 			</data>
 		</dict>
 		<key>Modules/FenigeSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			18nqowX2Jwt0MsGJRQJGJGA+UpDChTK6SGt0vC7BfSI=
+			d8/NSE4kbkIxr8IZRI9u/LXpzly0IHQAb80fHzFngTw=
 			</data>
 		</dict>
 		<key>Modules/FenigeSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8hjDq0okjq0bCz2Go8XBH3bEFrcPKpsK1NL/aVS7vGM=
+			j30wCbENvc+tS4F3GRpkOi4iQFBcUzQvOakrx9Ph7Z8=
 			</data>
 		</dict>
 		<key>Modules/FenigeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -148,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8hjDq0okjq0bCz2Go8XBH3bEFrcPKpsK1NL/aVS7vGM=
+			j30wCbENvc+tS4F3GRpkOi4iQFBcUzQvOakrx9Ph7Z8=
 			</data>
 		</dict>
 		<key>Modules/FenigeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9oHNGHZDOn6xMP1i1Ew95BYHwj+H0BacsFRJaO3Z2Oo=
+			oSqQL/5UuADOcMhjvJmXtCoGdYHzMumU/CBSqk/aKuw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

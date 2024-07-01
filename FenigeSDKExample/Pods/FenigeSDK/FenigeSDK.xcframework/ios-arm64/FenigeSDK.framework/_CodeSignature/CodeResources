@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		zTFUF1h+ccnlyceLEw19mBCapN0=
+		dBMiz4UDpbdBjpx836WYJrLZQPg=
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		nKAMl7NbE6JtzYmuRcoWXOR8Wq4=
+		fSrWCT8b/BqXjAqt2iE1T/mLU4w=
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		nKAMl7NbE6JtzYmuRcoWXOR8Wq4=
+		fSrWCT8b/BqXjAqt2iE1T/mLU4w=
 		</data>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		9LbZT2jthTQ3R0rsRW9FDuh870k=
+		rvi2/XNn5vZdNbla2bmih5vVx9k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V8bC6iiX0vpfh8yv0+Bd0YAcYIwJ96szJX6fXqJAqJk=
+			q/18UgwF9z59ykvGW5O9p6No5XRikawlWZUUvLZJd2M=
 			</data>
 		</dict>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FjV1KveZSQqxTamj8Sg7THeq27hN6U5U7TVgSjFeap8=
+			aI0AVEuiXr6FJ/vLAg3JDYWzXB+7G5I6dzIVorPp40w=
 			</data>
 		</dict>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FjV1KveZSQqxTamj8Sg7THeq27hN6U5U7TVgSjFeap8=
+			aI0AVEuiXr6FJ/vLAg3JDYWzXB+7G5I6dzIVorPp40w=
 			</data>
 		</dict>
 		<key>Modules/FenigeSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9xaYnp9Eu/ji0GNwr6Y/5qTO08D/V2/9mfYiWXdEP7s=
+			xVbrvh69msCt3NVsKdUCpQv9ZS2CJL7MPlsKkN7I5zE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,14 +1,14 @@
 //
-//  MainViewController.swift
+//  MainVC.swift
 //  FenigeSDKExample
 //
-//  Created by Dmytro Onyshchuk on 30.05.2024.
+//  Created by Dmytro Onyshchuk on 18.06.2024.
 //
 
 import UIKit
 import FenigeSDK
 
-final class MainViewController: UIViewController {
+final class MainVC: UIViewController {
 	
 	private let fenigeSDKInstance = Fenige()
 	private var transactionLabel: UILabel?
@@ -38,7 +38,7 @@ final class MainViewController: UIViewController {
 }
 
 // MARK: Actions
-private extension MainViewController {
+private extension MainVC {
 	
 	@objc private func createPaymentButtonAction() {
 		createPayment()
@@ -47,34 +47,40 @@ private extension MainViewController {
 }
 
 // MARK: Private functions
-private extension MainViewController {
+private extension MainVC {
 	
 	private func createPayment() {
 		
-		let redirectUrl = RedirectUrl(successUrl: "https://paytool-dev.fenige.pl/demo/?success=1",
-									  failureUrl: "https://paytool-dev.fenige.pl/demo/?success=0")
+		let redirectUrl = RedirectUrl(successUrl: "https://paytool.fenige.pl/demo/?success=1",
+									  failureUrl: "https://paytool.fenige.pl/demo/?success=0")
 		
 		let address = Address(countryCode: "PL",
-							  city: "Testowo",
+							  city: "Test",
 							  postalCode: "12-345",
-							  street: "Testowa",
+							  street: "Test",
 							  houseNumber: "1")
 		
 		let sender = Sender(firstName: "Test",
 							lastName: "Testowy",
 							address: address)
 		
-		let payment = Payment(transactionId: "0000-0000-0000-0000-0000",
-							  currencyCode: "USD",
-							  amount: 10,
-							  description: "Test transaction",
+		let payment = Payment(transactionId: "ff354ad0-a24a-4a02-99bd-4e8d01212c65",
+							  currencyCode: "PLN",
+							  amount: 100,
+							  description: "Test description",
 							  formLanguage: "en",
 							  redirectUrl: redirectUrl,
 							  sender: sender,
-							  merchantUrl: "https://paytool-dev.fenige.pl/demo/",
-							  orderNumber: "1")
+							  merchantUrl: "https://paytool.fenige.pl/demo/",
+							  orderNumber: "1",
+							  autoClear: true)
 		
-		fenigeSDKInstance.initPayment(apiKey: "0000-0000-0000-0000-0000", payment: payment, containerViewController: self, completion: { [weak self] (transactionId: String?) in
+		fenigeSDKInstance.initPayment(environment: .production, apiKey: "bfd5061e-9455-4f74-b688-d19ab3643808", payment: payment, containerViewController: self, completion: { [weak self] (transactionId: String?, error: FenigeError?) in
+			
+			if let err = error {
+				print("Error: " + err.localizedDescription)
+			}
+			
 			let transactionIdText = transactionId ?? "NIL"
 			print("Transaction ID: " + transactionIdText)
 			self?.displayTransactionId(transactionIdText)

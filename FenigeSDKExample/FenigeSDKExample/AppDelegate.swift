@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	private func loadWindow() {
 		window = UIWindow(frame: UIScreen.main.bounds)
-		window?.rootViewController = UINavigationController(rootViewController: MainViewController())
+		window?.rootViewController = UINavigationController(rootViewController: MainVC())
 		window?.makeKeyAndVisible()
 	}
 	
