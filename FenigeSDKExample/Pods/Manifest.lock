@@ -1,0 +1,16 @@
+PODS:
+  - FenigeSDK (1.0.0)
+
+DEPENDENCIES:
+  - FenigeSDK
+
+SPEC REPOS:
+  trunk:
+    - FenigeSDK
+
+SPEC CHECKSUMS:
+  FenigeSDK: 2ddfc3589e2901d37f06ada7a9419bf7ab63e3fb
+
+PODFILE CHECKSUM: 2b8dbf10c1b3cb3c095522581caffc409a788884
+
+COCOAPODS: 1.15.2

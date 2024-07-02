@@ -1,0 +1,88 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FenigeSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import DeveloperToolsSupport
+@_exported import FenigeSDK
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class Fenige {
+  public init()
+  public func initPayment(environment: FenigeSDK.FenigeEnvironment, apiKey: Swift.String, payment: FenigeSDK.Payment, containerViewController: UIKit.UIViewController, completion: ((Swift.String?, _ error: FenigeSDK.FenigeError?) -> Swift.Void?)? = nil)
+  @objc deinit
+}
+public enum FenigeEnvironment : Swift.Encodable {
+  case development
+  case production
+  public static func == (a: FenigeSDK.FenigeEnvironment, b: FenigeSDK.FenigeEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct FenigeServerError : Swift.Decodable {
+  public var errorType: FenigeSDK.ErrorType
+  public var message: Swift.String?
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum FenigeError : Swift.Error {
+  case serverError(FenigeSDK.FenigeServerError), error(any Swift.Error), unknown
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+public enum ErrorType : Swift.Decodable, Swift.CaseIterable {
+  public static var allCases: [FenigeSDK.ErrorType] {
+    get
+  }
+  case merchantNotExists
+  case unknown(Swift.String?)
+  public func codeError() -> Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+  public typealias AllCases = [FenigeSDK.ErrorType]
+}
+public struct Payment : Swift.Encodable {
+  public let transactionId: Swift.String
+  public let currencyCode: Swift.String
+  public let amount: Swift.Int
+  public let description: Swift.String
+  public let formLanguage: Swift.String
+  public let redirectUrl: FenigeSDK.RedirectUrl
+  public let sender: FenigeSDK.Sender
+  public let merchantUrl: Swift.String
+  public let orderNumber: Swift.String
+  public let autoClear: Swift.Bool
+  public init(transactionId: Swift.String, currencyCode: Swift.String, amount: Swift.Int, description: Swift.String, formLanguage: Swift.String, redirectUrl: FenigeSDK.RedirectUrl, sender: FenigeSDK.Sender, merchantUrl: Swift.String, orderNumber: Swift.String, autoClear: Swift.Bool)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Sender : Swift.Encodable {
+  public let firstName: Swift.String
+  public let lastName: Swift.String
+  public let address: FenigeSDK.Address
+  public init(firstName: Swift.String, lastName: Swift.String, address: FenigeSDK.Address)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Address : Swift.Encodable {
+  public let countryCode: Swift.String
+  public let city: Swift.String
+  public let postalCode: Swift.String
+  public let street: Swift.String
+  public let houseNumber: Swift.String
+  public init(countryCode: Swift.String, city: Swift.String, postalCode: Swift.String, street: Swift.String, houseNumber: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct RedirectUrl : Swift.Encodable {
+  public let successUrl: Swift.String
+  public let failureUrl: Swift.String
+  public init(successUrl: Swift.String, failureUrl: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension FenigeSDK.FenigeEnvironment : Swift.Equatable {}
+extension FenigeSDK.FenigeEnvironment : Swift.Hashable {}

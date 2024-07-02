@@ -1,0 +1,11 @@
+framework module FenigeSDK {
+  umbrella header "FenigeSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module FenigeSDK.Swift {
+  header "FenigeSDK-Swift.h"
+  requires objc
+}
