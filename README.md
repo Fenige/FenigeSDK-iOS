@@ -40,7 +40,7 @@ let sender = Sender(firstName: "Test",
                     lastName: "Testowy",
                     address: address)
 
-let payment = Payment(transactionId: "0000-0000-0000-0000-0000",
+let payment = Payment(transactionId: UUID().uuidString,
                       currencyCode: "USD",
                       amount: 10,
                       description: "Test transaction",
