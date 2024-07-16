@@ -84,10 +84,6 @@ fenigeSDKInstance.initPayment(environment: .production, apiKey: "0000-0000-0000-
 |transactionConfigurationId|String|Terminal’s unique uuid to process payment
 |autoClear|Bool|Automaticly this parameter is on true. It mean that transaction will be cleared automaticly by fenige in few hours. You can set this parameter as false butyou must remember to clear your transaction.
 
-### Init Apple Pay Payment
-
-See an example project.
-
 ## Author
 
 Fenige, fenige.mobile.sdk@gmail.com
